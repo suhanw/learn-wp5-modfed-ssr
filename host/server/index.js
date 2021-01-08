@@ -1,3 +1,4 @@
+import 'core-js';
 import 'regenerator-runtime';
 import express from 'express';
 import initMiddleware from "./middleware";
