@@ -35,7 +35,7 @@ const config = {
 			library: { type: 'var', name: 'remote' },
 			filename: 'scripts/remoteEntry.js', 
 			exposes: {
-				'./TopNav': './client/components/top-nav/index.js',
+				'./top-nav': './client/components/top-nav/index.js',
 			}, 
 			shared: require('./package.json').dependencies,
 		}), 

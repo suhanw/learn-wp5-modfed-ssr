@@ -30,7 +30,7 @@ let config = {
 			library: { type: 'commonjs-module' },
 			filename: 'container.js',
 			exposes: {
-				'./TopNav': './client/components/top-nav/index.js',
+				'./top-nav': './client/components/top-nav/index.js',
 			}, 
 			// shared: require("./package.json").dependencies,
 		}),
