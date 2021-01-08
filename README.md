@@ -1,4 +1,4 @@
-# Instructions
+# Run locally
 
 1. Install Node.js 14.15.3
 2. Run `git clone https://github.com/suhanw/wp5-ssr.git`
