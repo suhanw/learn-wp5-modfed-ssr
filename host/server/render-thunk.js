@@ -1,5 +1,12 @@
 const renderThunk = () => async (req, res, next) => {
-	const renderer = (await import('./renderer')).default;
+	let renderer; 
+	try {
+		renderer = (await import('./renderer')).default;
+	} catch (error) {
+		console.log({ error })
+		renderer = (req, res, next) => res.send('Error caught');
+	}
+
 	return renderer(req, res, next);
 };
 
