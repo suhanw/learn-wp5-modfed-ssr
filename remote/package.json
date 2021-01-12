@@ -4,12 +4,12 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"clear": "rimraf dist",
-		"build:client": "webpack --config webpack.client.config.js",
-		"build:server": "webpack --config webpack.server.config.js",
+		"clear": "rimraf build",
+		"build:client": "webpack --config webpack.client.config.js --json=build/client/webpack-stats.json",
+		"build:server": "webpack --config webpack.server.config.js --json=build/server/webpack-stats.json",
 		"dev:client": "webpack serve --config webpack.client.config.js",
-		"predev": "npm run clear",
-		"dev": "nodemon --ignore build --exec 'run-p dev:client build:server'"
+		"dev:server": "nodemon --ignore build --exec 'run-s clear build:server'",
+		"dev": "run-p dev:client dev:server"
 	},
 	"author": "Suhan Wijaya",
 	"license": "ISC",

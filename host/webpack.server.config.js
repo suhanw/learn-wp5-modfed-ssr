@@ -30,7 +30,7 @@ let config = {
 			library: { type: 'commonjs-module' },
 			filename: 'container.js',
 			remotes: {
-				remote: path.join(__dirname, '../blog-react-ssr-remote/build/server/container.js'),
+				remote: path.join(__dirname, '../remote/build/server/container.js'),
 			},
 			// shared: require("./package.json").dependencies,
 		}),
