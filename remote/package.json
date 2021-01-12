@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"clear": "rimraf build",
-		"build:client": "webpack --config webpack.client.config.js --json=build/client/webpack-stats.json",
-		"build:server": "webpack --config webpack.server.config.js --json=build/server/webpack-stats.json",
+		"build:client": "webpack --config webpack.client.config.js",
+		"build:server": "webpack --config webpack.server.config.js",
 		"dev:client": "webpack serve --config webpack.client.config.js",
 		"dev:server": "nodemon --ignore build --exec 'run-s clear build:server'",
 		"dev": "run-p dev:client dev:server"
