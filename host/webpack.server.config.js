@@ -23,8 +23,8 @@ let config = {
 	},
 
 	externals: [webpackNodeExternals({
-    allowlist: [/^webpack\/container\/reference\//]
-  })],
+		allowlist: [/^webpack\/container\/reference\//],
+	})],
 
 	plugins: [
 		new ModuleFederationPlugin({
